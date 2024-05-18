@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像アップロード＆描画アプリ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <input type="file" id="uploadImage" accept="image/*">
+        <div class="controls">
+            <label for="penColor">ペンの色: </label>
+            <input type="color" id="penColor" value="#ff0000">
+            <label for="penSize">ペンのサイズ: </label>
+            <input type="number" id="penSize" value="5" min="1" max="50">
+        </div>
+        <canvas id="canvas"></canvas>
+        <button id="undo">ひとつ戻る</button>
+        <button id="redo">ひとつ進む</button>
+        <button id="saveImage">描画を保存</button>
+        <button id="resetCanvas">終了</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
